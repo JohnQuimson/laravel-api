@@ -1,0 +1,341 @@
+@import "~bootstrap/scss/bootstrap";
+@import "_partials/reset.scss";
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+// NAVBAR --------------------
+.jq-navbar {
+    background-color: #0a1930;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    .nav-link {
+        color: #74c6cc;
+
+        &:hover {
+            color: #b2dde0;
+        }
+    }
+
+    .cont-logo {
+        height: 50px;
+        width: 50px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: #74c6cc;
+    }
+}
+
+// -----------
+// WELCOME
+// -----------
+
+// Main --------------------
+.main-welcome {
+    background-color: #0a1930;
+    height: 100vh;
+    padding-top: 100px;
+
+    .salute {
+        color: #74c6cc;
+        font-weight: 600;
+    }
+
+    h1 {
+        color: #cbd7f3;
+        text-transform: uppercase;
+        font-size: 70px;
+    }
+
+    .my-job {
+        color: #8995b5;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .short-description {
+        width: 40%;
+        color: #8995b5;
+        margin-bottom: 50px;
+    }
+
+    .github-btn {
+        border: 1px solid #74c6cc;
+        color: #74c6cc;
+        padding: 10px 30px;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: #74c6cc;
+            color: #0a1930;
+            box-shadow: 0 0 5px #74c6cc, 0 0 25px #74c6cc, 0 0 50px #74c6cc;
+            border: 1px solid white;
+        }
+    }
+    .work-btn {
+        border: 1px solid #ffc107;
+        color: #ffc107;
+        padding: 10px 30px;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: #ffc107;
+            color: #0a1930;
+            box-shadow: 0 0 5px #ffc107, 0 0 25px #ffc107, 0 0 50px #ffc107;
+            border: 1px solid white;
+        }
+    }
+}
+
+// FOOTER --------------------
+footer {
+    background-color: #050f1d;
+
+    ul {
+        margin-bottom: 0;
+        list-style-type: none;
+        padding: 10px 20px;
+
+        a {
+            color: #474c58;
+
+            &:hover {
+                color: #767980;
+            }
+        }
+    }
+
+    .cont-sx {
+        font-size: 14px;
+    }
+
+    .cont-dx {
+        font-size: 22px;
+    }
+}
+
+// -----------
+// DASHBOARD
+// -----------
+.jq-sidebar {
+    width: 230px;
+    background-color: #0b121d;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        color: #74c6cc;
+
+        &:hover {
+            color: #b8e2e6;
+        }
+    }
+
+    .header-sidebar {
+        padding: 20px 0;
+
+        a:hover {
+            color: orange;
+        }
+    }
+
+    .sidebar-options {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+        width: 100%;
+        padding-left: 20px;
+
+        a:hover {
+            color: white;
+        }
+    }
+
+    .sidebar-logout {
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        padding: 20px;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            &:hover {
+                color: rgb(255, 0, 0);
+            }
+        }
+    }
+}
+
+.main-dashboard,
+.main-index,
+.main-create,
+.main-show,
+.main-edit {
+    background-color: #0a1930;
+    margin-left: 230px;
+    height: 100vh;
+    overflow-y: scroll;
+    padding-bottom: 100px;
+}
+
+// -----------
+// CREATE
+// -----------
+.main-create {
+    color: white;
+
+    h1 {
+        text-transform: uppercase;
+        color: #74c6cc;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .container {
+        input,
+        select {
+            background-color: transparent;
+            border: 1px solid #74c6cc;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            select:focus {
+                background-color: #050f1d;
+            }
+
+            button {
+                max-width: 100px;
+            }
+        }
+    }
+}
+
+// -----------
+// SHOW
+// -----------
+.main-show {
+    color: white;
+
+    h1 {
+        text-transform: uppercase;
+        color: #74c6cc;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .jq-cont {
+        border: 1px solid #74c6cc;
+        max-width: 600px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border-radius: 20px;
+        padding: 10px;
+
+        .header-show {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+
+            span {
+                color: #74c6cc;
+            }
+        }
+
+        .cont-info {
+            .riga {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+        a {
+            max-width: 100px;
+
+            &:hover {
+                background-color: #f1d170;
+                color: white;
+            }
+        }
+    }
+}
+
+// -----------
+// CREATE
+// -----------
+.main-edit {
+    color: white;
+
+    h1 {
+        text-transform: uppercase;
+        color: #74c6cc;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .container {
+        input,
+        select {
+            background-color: transparent;
+            border: 1px solid #74c6cc;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            select:focus {
+                background-color: #050f1d;
+            }
+
+            button {
+                max-width: 200px;
+            }
+        }
+    }
+}
+
+// -----------
+// LOGIN
+// -----------
+.main-login {
+    background-color: #0a1930;
+    height: 100vh;
+    padding-top: 100px;
+}
+
+// -----------
+// REGISTER
+// -----------
+.main-register {
+    background-color: #0a1930;
+    height: 100vh;
+    padding-top: 100px;
+}
