@@ -12,6 +12,7 @@ class ProjectController extends Controller
     {
 
         $projects = Project::all();
+        // $projects = Project::paginate(10);
 
         return response()->json([
             'status' => true,
